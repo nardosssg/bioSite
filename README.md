@@ -1,2 +1,4 @@
-# bioSite
-BioSite Final Project: Creating a website to tell their story
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Nathan Braun
+* Nardos Gebremedhin
