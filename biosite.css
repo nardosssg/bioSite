@@ -49,81 +49,94 @@ nav a {
     padding: 50px 0;
 }
 
-.info .text-content {
+.text-content {
     flex: 1;
-    padding-right: 20px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.info .text-content h2 {
+.text-content h2 {
     font-size: 28px;
 }
 
-.info .text-content p {
+.text-content p {
     font-size: 16px;
     color: #333;
 }
 
-.info .image-content {
+
+.image-multi {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr)); 
+    gap: 5px; 
+    padding: 0; 
+}
+
+.image-multi img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+/* about page */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.image-prof {
     flex: 1;
     text-align: center;
 }
 
-.info .image-content img {
+.image-prof img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
 }
 
-/* about page */
-.container .image {
-    float: left;
-    width: 40%;
+.content {
+    flex: 2;
+    padding-left: 40px;
 }
 
-.container .image img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.container .content {
-    float: right;
-    width: 55%;
-}
-
-.container .content h1 {
+.content h1 {
     font-size: 32px;
 }
 
-.container .content p {
+.content p {
     font-size: 16px;
     line-height: 1.6;
     color: #555;
 }
 
-/* hobby page */
-.section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+/* hobby*/
+.hobby-item {
+    display: inline; 
+    align-items: left; 
+    margin-bottom: 30px;
 }
 
-.section img {
-    width: 30%;
-    border-radius: 10px;
-}
-
-.section .text {
-    flex: 1;
-    padding-left: 20px;
-}
-
-.section .text h2 {
-    font-size: 24px;
-}
-
-.section .text p {
+.hobby-item .text {
+    flex: 1; 
+    padding: 20px;
     font-size: 16px;
-    color: #444;
+    color: #333;
+
+}
+
+.hobby-item img {
+    width: 40%; 
+    height: auto;
+    margin-left: 20px; 
+    border-radius: 10px;
+    object-fit: cover; 
 }
 
 footer {
